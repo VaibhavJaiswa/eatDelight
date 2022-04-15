@@ -1,0 +1,22 @@
+{
+  "name": "assignment_6",
+  "version": "1.0.0",
+  "description": "API for Restaurant Filters created by Vaibhav Jaiswal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Vaibhav Jaiswal Edureka Batch_30",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.17.3",
+    "mongoose": "^5.13.14",
+    "razorpay": "^2.8.1",
+    "shortid": "^2.2.16"
+  },
+  "devDependencies": {}
+}

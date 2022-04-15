@@ -1,0 +1,300 @@
+.heading{
+    display: block;
+    margin-left: 10%;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36;
+}
+.filterBox{
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+    background-color: white;
+    display: inline-block;
+    margin-left: 10%;
+    width: 260px;
+    height: auto;
+    /* border: 1px solid black; */
+    float: left;
+}
+.filterSort{
+    display: block;
+    padding: 10px; 
+    margin: 5px;
+    /* border: 1px solid black; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #192f60;
+
+}
+.optionHead{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color:#192f60;
+
+}
+.option{
+    display: block;
+    margin: 10px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #192f60;
+}
+select{
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #192f60;
+}
+option{
+    font-family: Arial, Helvetica, sans-serif;    
+    font-size: 16px;
+    background-color: #f1f1f1;
+    color: black;
+    padding: 40px;
+    margin: 20px;
+}
+.main {
+    display: block;
+    position: relative;
+    padding-left: 17px;
+    padding-top: 6px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: lighter;
+}
+/* Hide the default checkbox */
+input[type=checkbox] {
+    visibility: hidden;
+}
+       /* Creating a custom checkbox
+        based on demand */
+        .geekmark {
+            position: absolute;
+            top: 8px;
+            left: 13px;
+            height: 13px;
+            width: 13px;
+            border: 2px solid #3a5075;
+            background-color: whitesmoke;
+        }
+              /* Specify the background color to be
+        shown when checkbox is active 
+        .main input:active ~ .geekmark {
+            background-color: red;
+        } */
+               /* Specify the background color to be
+        shown when checkbox is checked */
+        .main input:checked ~ .geekmark {
+            background-color: #3a5075;
+        }
+                /* Checkmark to be shown in checkbox */
+        /* It is not be shown when not checked */
+        .geekmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+                /* Display checkmark when checked */
+                .main input:checked ~ .geekmark:after {
+                    display: block;
+                }
+       /* Styling the checkmark using webkit */
+        /* Rotated the rectangle by 45 degree and 
+        showing only two border to make it look
+        like a tickmark */
+        .main .geekmark:after {
+            left: 2px;
+            bottom: 1px;
+            width: 4px;
+            height: 10px;
+            border: 1px solid white;
+            border-width: 0 2px 2px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }                  
+
+        /* Custom Style for Radio Buttons */
+
+.mainR {
+    display: block;
+    position: relative;
+    padding-left: 17px;
+    padding-top: 6px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: lighter;
+}
+/* Hide the default checkbox */
+input[type=radio] {
+visibility: hidden;
+}
+/* Creating a custom checkbox
+based on demand */
+.geekmarkR {
+    position: absolute;
+    top: 8px;
+    left: 13px;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    border: 2px solid #3a5075;
+    background-color: whitesmoke;
+}
+        /* Specify the background color to be
+shown when checkbox is active 
+.main input:active ~ .geekmark {
+    background-color: red;
+} */
+        /* Specify the background color to be
+shown when checkbox is checked */
+.mainR input:checked ~ .geekmarkR {
+    background-color: #3a5075;
+}
+        /* Checkmark to be shown in checkbox */
+/* It is not be shown when not checked */
+.geekmarkR:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+        /* Display checkmark when checked */
+        .mainR input:checked ~ .geekmarkR:after {
+            display: block;
+        }
+/* Styling the checkmark using webkit */
+/* Rotated the rectangle by 45 degree and 
+showing only two border to make it look
+like a tickmark */
+.mainR .geekmarkR:after {
+    left: -1px;
+    bottom: -1px;
+    width: 10px;
+    height: 10px;
+    border: 10px solid white;
+    border-radius: 50%;
+    border-width: 2px 2px 2px 2px;
+    /* -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); */
+} 
+
+/* class itemCard for making box */
+.itemCard{
+    display: inline-block;
+    height: 290px;
+    width: 600px;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+    background-color: white;
+    /* border: 1px solid black; */
+    margin: 50px 0px 10px 50px;
+    padding: 30px 70px 30px 30px;
+}
+.roundSqImg{
+    height: 100%;
+    width: 100%;
+    border-radius: 20%;
+}
+.cardImage{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-radius: 20%;
+    float: left;
+}
+.itemInfo{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #3a5075;
+    padding: 10px;
+    margin-left: 10px;
+}
+.itemInfoSmall{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #3a5075;
+    padding: 1px;
+    margin-left: 0px; 
+}
+.address{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #a9afb8;
+    font-weight: normal;
+    padding: 1px;
+    margin-left: 0px; 
+}
+.cuisine{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #a9afb8;
+    padding: 1px;
+    margin-left: 0px; 
+    float: left;
+}
+.cuisineInfo{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #3a5075;
+    padding: 1px;
+    margin-left: 40px; 
+}
+.pages{
+    display: inline-block;
+    height:50px;
+    width:600px;
+    /* border: 1px solid black; */
+    margin: 30px 30px 50px 50px;
+
+}
+.noCss{
+
+    font-weight: 700;
+}
+.pageNo{
+    display: inline-block;
+    padding: 8px 16px;
+    /* margin: 2px; */
+    border-radius: 20%;
+    background-color: #fbfbfb;
+    color: #3a5075;
+    border: 1px solid #3a5075;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.currentPageNo{
+    display: inline-block;
+    padding: 8px 16px;
+    /* margin: 2px; */
+    border-radius: 20%;
+    background-color: #3a5075;
+    color: #fbfbfb;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
